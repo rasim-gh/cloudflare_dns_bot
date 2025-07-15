@@ -2,7 +2,7 @@
 
 set -e
 
-echo "🚀 نصب ربات Cloudflare DNS Telegram"
+echo "🚀 Cloudflare DNS Telegram"
 
 # گرفتن اطلاعات از کاربر
 read -p "Enter Bot Token: " bot_token
