@@ -35,6 +35,3 @@
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/rasim-gh/cloudflare_dns_bot/main/install.sh)
 
-
-
-
