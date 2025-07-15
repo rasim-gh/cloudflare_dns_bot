@@ -5,10 +5,10 @@ set -e
 echo "🚀 نصب ربات Cloudflare DNS Telegram"
 
 # گرفتن اطلاعات از کاربر
-read -p "🤖 توکن ربات تلگرام: " bot_token
-read -p "📧 ایمیل Cloudflare: " cf_email
-read -p "🔑 API Key: " cf_api
-read -p "👤 آیدی عددی ادمین: " admin_id
+read -p "Enter Bot Token: " bot_token
+read -p "Enter CLOUDFLARE_EMAIL : " cf_email
+read -p "Enter CLOUDFLARE_API_KEY: " cf_api
+read -p "Enter ID_number Admin (EX'5123552') : " admin_id
 
 # کپی فایل config.py از template
 cp config.py.template config.py
@@ -19,7 +19,7 @@ sed -i "s|CLOUDFLARE_EMAIL = \"\"|CLOUDFLARE_EMAIL = \"$cf_email\"|" config.py
 sed -i "s|CLOUDFLARE_API_KEY = \"\"|CLOUDFLARE_API_KEY = \"$cf_api\"|" config.py
 sed -i "s|ADMIN_ID = \"\"|ADMIN_ID = $admin_id|" config.py
 
-echo "✅ فایل config.py ساخته شد."
+echo "✅ Config file created successfully."
 
 # نصب ابزار لازم
 apt update -y
@@ -56,5 +56,5 @@ systemctl daemon-reload
 systemctl enable cloudflarebot
 systemctl restart cloudflarebot
 
-echo "✅ نصب کامل شد!"
-echo "📡 وضعیت: systemctl status cloudflarebot"
+echo "✅ Installation completed successfully."
+echo "📡 status: systemctl status cloudflarebot"
