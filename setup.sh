@@ -6,7 +6,10 @@ SERVICE_NAME="cloudflarebot"
 show_menu() {
   clear
   echo "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
-  echo "┃   ⚙️ Cloudflare DNS Bot Installer  |  telegram Channel : @Utah_net"
+  echo "┃   ⚙️ Cloudflare DNS Bot Installer     ┃"
+  echo "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+  echo "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+  echo "┃    Telegram Channel : Utah_net        ┃"
   echo "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
   echo ""
   echo "1) 🛠  Install the bot"
