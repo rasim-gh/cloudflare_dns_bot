@@ -28,5 +28,3 @@
 
 ```bash
 bash <(curl -Ls --ipv4 https://raw.githubusercontent.com/rasim-gh/cloudflare_dns_bot/main/setup.sh)
-
-
