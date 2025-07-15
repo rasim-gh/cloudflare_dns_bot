@@ -62,7 +62,7 @@ ADMIN_ID = اایدی عددی تلگرام
 | 🔄 ریستارت ربات | `sudo systemctl restart cloudflarebot` |
 | ⛔️ توقف کامل | `sudo systemctl stop cloudflarebot` |
 | 🚫 غیرفعال‌سازی (از بوت) | `sudo systemctl disable cloudflarebot` |
-| ✅ فعال‌سازی (خودکار هنگام روشن‌شدن) | `sodu systemctl enable cloudflarebot` |
+| ✅ فعال‌سازی (خودکار هنگام روشن‌شدن) | `sudo systemctl enable cloudflarebot` |
 
 ---
 
