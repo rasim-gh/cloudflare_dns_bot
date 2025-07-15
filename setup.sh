@@ -9,12 +9,13 @@ show_menu() {
   echo "┃   ⚙️ Cloudflare DNS Bot Installer     ┃"
   echo "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
   echo "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
-  echo "┃    Telegram Channel : Utah_net    ┃"
+  echo "┃      Telegram Channel : Utah_net      ┃"
   echo "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
   echo ""
   echo "1) 🛠  Install the bot"
   echo "2) ⚙️  Configure the bot"
-  echo "3) ❌ Uninstall the bot"
+  echo "3) 🔄 Update the bot"
+  echo "4) ❌ Uninstall the bot"
   echo "0) 🚪 Exit"
   echo ""
   read -p "Your choice: " choice
@@ -45,6 +46,20 @@ configure_bot() {
   read -p "⏎ Press Enter to return to the menu..." _
 }
 
+update_bot() {
+  if [ ! -d "$INSTALL_DIR/.git" ]; then
+    echo "⚠️ Git repository not found. Please install the bot first."
+  else
+    echo "🔄 Updating the bot to the latest version..."
+    cd "$INSTALL_DIR" || exit
+    git pull origin main
+    echo "🔄 Restarting the bot service..."
+    systemctl restart "$SERVICE_NAME"
+    echo "✅ Bot updated and restarted successfully."
+  fi
+  read -p "⏎ Press Enter to return to the menu..." _
+}
+
 uninstall_bot() {
   echo "❌ Uninstalling the bot completely..."
   systemctl stop "$SERVICE_NAME"
@@ -61,7 +76,8 @@ while true; do
   case $choice in
     1) install_bot ;;
     2) configure_bot ;;
-    3) uninstall_bot ;;
+    3) update_bot ;;
+    4) uninstall_bot ;;
     0) echo "👋 Exiting. Goodbye!"; exit 0 ;;
     *) echo "❌ Invalid option. Please choose a valid one."; sleep 2 ;;
   esac
