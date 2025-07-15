@@ -2,6 +2,16 @@
 
 INSTALL_DIR="/root/cloudflare_dns_bot"
 SERVICE_NAME="cloudflarebot"
+# At the very beginning of setup.sh
+
+INSTALL_DIR="/root/cloudflare_dns_bot"
+
+if [ -d "$INSTALL_DIR/.git" ]; then
+ 
+  cd "$INSTALL_DIR" || exit
+  git pull origin main
+  cd - || exit
+fi
 
 show_menu() {
   clear
