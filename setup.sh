@@ -21,6 +21,7 @@ show_menu() {
   read -p "Your choice: " choice
 }
 
+
 install_bot() {
   echo "📦 Installing the bot..."
   rm -rf "$INSTALL_DIR"
