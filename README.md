@@ -24,11 +24,17 @@
 - نصب `git` و `python3-venv`
 
 ---
+# راهنمای نصب یک‌خطی Cloudflare DNS Telegram Bot
 
-## نصب و راه‌اندازی
+برای نصب و راه‌اندازی سریع ربات تلگرام مدیریت DNS کلودفلر، کافی است یک دستور ساده را در سرور خود اجرا کنید.
 
-### 1. کلون کردن ریپوزیتوری پروژه
+---
+
+## دستور نصب سریع (یک خطی):
 
 ```bash
-git clone https://github.com/YourUsername/cloudflare_dns_bot.git
-cd cloudflare_dns_bot
+bash <(curl -s https://raw.githubusercontent.com/rasim-gh/cloudflare_dns_bot/main/install.sh)
+
+
+
+
