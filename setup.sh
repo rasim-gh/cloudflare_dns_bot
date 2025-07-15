@@ -11,7 +11,7 @@ INSTALL_DIR="/root/cloudflare_dns_bot"
 rm -rf $INSTALL_DIR
 
 # کلون ریپو
-git clone https://github.com/YourUsername/cloudflare_dns_bot.git $INSTALL_DIR
+git clone https://github.com/rasim-gh/cloudflare_dns_bot.git $INSTALL_DIR
 
 # رفتن داخل پوشه
 cd $INSTALL_DIR
