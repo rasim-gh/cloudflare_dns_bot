@@ -79,7 +79,7 @@ async def show_help(update: Update, context: ContextTypes.DEFAULT_TYPE):
 🚫 دکمه لغو (Cancel):
 در تمام مراحل وارد کردن داده (مثل IP، نام دامنه، نام رکورد)، یک دکمه ❌ لغو نمایش داده می‌شود که با کلیک روی آن، فرآیند جاری متوقف شده و به منو بازمی‌گردید.
 
-
+توسعه دهنده : rasim ghodrati @rasim_gh
 """
 
     )
