@@ -232,7 +232,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         record = get_record_details(zone_id, record_id)
         user_state[uid]["record_id"] = record_id
 
-        text = f"⚙️ تنظیمات رکورد: `{record['name']}`\n\nType: `{record['type']}`\nIP Addres: `{record['content']}`\nTTL: `{record['ttl']}`\n Proxied: {'✅' if record.get('proxied') else '❌'}"
+        text = f"⚙️ تنظیمات رکورد: `{record['name']}`\n\nType: `{record['type']}`\nIP Address: `{record['content']}`\nTTL: `{record['ttl']}`\n Proxied: {'✅' if record.get('proxied') else '❌'}"
         keyboard = [
             [
                 InlineKeyboardButton("🖊 تغییر IP", callback_data=f"editip_{record_id}"),
