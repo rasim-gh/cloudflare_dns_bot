@@ -8,6 +8,7 @@ from telegram import CallbackQuery, Message
 
 logger = logging.getLogger(__name__)
 
+
 RECORDS_PER_PAGE = 10
 user_state = defaultdict(dict)
 
