@@ -83,7 +83,6 @@ async def show_help(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 توسعه دهنده : rasim ghodrati @rasim_gh
 """
-
     )
 
     keyboard = [
