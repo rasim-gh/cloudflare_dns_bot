@@ -7,6 +7,7 @@ from config import BOT_TOKEN, ADMIN_ID
 from telegram import CallbackQuery, Message
 
 logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO)
 
 
 RECORDS_PER_PAGE = 10
